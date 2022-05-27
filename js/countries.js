@@ -23,7 +23,7 @@ const allCountry = countries=>{
             let tr = document.createElement('tr');
             tr.innerHTML = `
             <th scope="row">${serialNo}</th>
-            <td><a href='#' onclick="countryDetail('${country?.name}')">${country?.name}</a></td>
+            <td><a href='#detail-card' onclick="countryDetail('${country?.name}')">${country?.name}</a></td>
                         <td>${country?.capital}</td>
                         <td>${country?.currencies[0].name}</td>
             `;
